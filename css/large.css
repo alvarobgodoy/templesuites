@@ -1,0 +1,108 @@
+:root {
+    --primary: #0E2E51;
+    --background: #fff;
+    --accent: #40C6DA;
+}
+
+@media only screen and (min-width: 64rem) {
+/* MAIN NAV */
+.header-logo-cont {
+    left: 5rem;
+}
+
+.header-nav {
+    width: 100%;
+}
+
+.nav-cont {
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.header-nav ul {
+    display: block;
+}
+
+.header-socials {
+    display: inline;
+    margin: 0 3rem;
+}
+
+/* SIDE NAV */
+.side-nav {
+    display: none;
+}
+
+#openBtn, #closeBtn {
+    display: none;
+}
+
+#openBtn.open, #closeBtn.open {
+    display: none;
+}
+
+/* HERO */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+.footer-main {
+    margin-left: 5rem;
+}
+
+.footer-info {
+    margin-right: 5rem;
+}
+
+.course-info p {
+    display: inline;
+}
+
+.course-info span:nth-child(2) {
+    display: inline;
+}
+
+/* ------------------------------------------------------------ */
+/* HOME MAIN */
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 65rem;
+    gap: 3rem;
+}
+
+.temple-description {
+    margin: 6rem 0 0 0;
+    display: grid;
+    column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr;
+    grid-column: span 2;
+}
+
+.temple-description h2 {
+    grid-column: 1;
+}
+
+.temple-description p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.temple-description img {
+    grid-column: 2;
+    grid-row: span 2;
+    /* max-width: 95%; */
+    justify-self: right;
+}
+
+.main-weather {
+    margin-bottom: 6rem;
+}
+
+.main-about-us {
+    margin: 4rem 0 0 0;
+}
+}

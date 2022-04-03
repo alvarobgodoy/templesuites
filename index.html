@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+    <header>
+        <!-- Nav -->
+        <nav class="header-nav">
+            <div class="nav-cont">
+                <!-- Logo -->
+                <div class="header-logo-cont">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="Temple Inn & Suites logo">
+                    </a>
+                </div>
+                <!-- Nav links -->
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./temples/">Temples</a></li>
+                    <li><a href="./reservation/">Reservation</a></li>
+                    <li><a href="./services/">Services</a></li>
+                </ul>
+                <!-- Socials -->
+                <div class="header-socials">
+                    <a href="https://facebook.com" target="_blank"><img src="./images/facebook-logo.webp" alt="Facebook logo"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="./images/linkedin-logo.webp" alt="Linkedin logo"></a>
+                </div>
+                <!-- Open Button -->
+                <button id="openBtn" class="menuBtn" onclick="toggleSlideMenu()">&#9776;</button>
+                <button id="closeBtn"  class="menuBtn" onclick="toggleSlideMenu()">&#10005;</button>
+            </div>
+        </nav>
+        <!-- Side Menu -->
+        <div id="side-menu" class="side-nav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./temples.html">Temples</a>
+            <a href="./reservation.html">Reservation</a>
+            <a href="./services/">Services</a>
+        </div>
+        <!-- Hero -->
+        <div class="hero">
+            <!-- Hero image -->
+            <picture>
+                <source media="(min-width: 40rem) and (max-width: 64rem)" srcset="./images/medium.jpg">
+                <source media="(min-width: 64rem)" srcset="./images/large.jpg">
+                <img src="./images/small.jpg" alt="Hero Image">
+            </picture>
+            <!-- Hero text -->
+            <div class="hero-text">
+                <h2>We take care of everything</h2>              
+                <p>You just have to enjoy your stay</p>
+            </div>
+            <!-- Call to action -->
+            <div class="call-to-action">
+                <h2>Reserve now!</h2>
+            </div>
+        </div>
+    </header>
+    <main class="home-main">
+        <!-- Short temple description -->
+        <section class="temple-description">
+            <h2>Washington D.C Temple</h2>
+            <p>The Washington D.C. Temple (formerly the Washington Temple) is the 18th constructed and 16th operating temple of The Church of Jesus Christ of Latter-day Saints. It is located in Kensington, Maryland, United States, just north of Washington, D.C., near the Capital Beltway.<br><br>The temple was dedicated in 1974 after an open house that attracted over 750,000 people, including several international dignitaries.</p>
+            <img src="./images/wdc-temple.jpg" alt="Front view of the Washington D.C Temple">
+        </section>
+        <!-- Local Weather -->
+        <section class="main-weather">
+            <h2>Local Weather</h2>
+            <div class="weather-info" id="weather-info">
+                <div class="winfo-cont">
+                    <p>Temperature: <span id="currentTempEl">...</span></p>
+                    <p><span id="currentCondEl">Loading...</span></p>
+                    <p>Humidity: <span id="currentHumEl">...</span></p>
+                </div>
+            </div>
+            <!-- Three day forecast -->
+            <div id="forecast"></div>
+        </section>
+        <!-- About us -->
+        <section class="main-about-us">
+            <h2>About us</h2>
+            <p>We're a owner-operated hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.<br><br>We cater temple workers, patrons, and their families by providing specialized services and accommodations that their specific needs.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-cont">
+            <a href="./index.html" class="footer-image"><img src="./images/logo-footer.png" alt="Website logo"></a>
+            <div class="footer-main">
+                <div>
+                    <h2>Location</h2>
+                    <p>4800 Montgomery Ln #300</p>
+                    <p>Bethesda, MD 20814</p>
+                    <a href="https://goo.gl/maps/j9MNBHJGaQ675KJZ8" target="_blank">📍 Google maps location</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h2>Contact Info</h2>
+                <p>info@templesuites.com</p>
+                <p>+1 (234) 5678-9012</p>
+            </div>
+        <div class="course-info">
+            <hr>
+            <p>© <span id="currentYear"></span> Temple Inn & Suites | Alvaro B. Godoy | WDD 230 Final Project<span> |</span></p>
+            <p id="lastUpdate"></p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>

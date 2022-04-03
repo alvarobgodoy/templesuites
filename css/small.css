@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
+
+:root {
+    --primary: #0E2E51;
+    --background: #fff;
+    --accent: #40C6DA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* MAIN NAV */
+.header-nav {
+    position: relative;
+    border-bottom: 1px solid grey;
+    z-index: 1;
+}
+
+.nav-cont {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 5rem;
+}
+
+.header-logo-cont {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(50% - 60px);
+    border: 1px solid grey;
+}
+
+.header-logo-cont img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    display: none;
+}
+
+.header-nav li {
+    float: left;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-nav li a {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.header-nav li a:hover {
+    background-color: var(--primary);
+    color: #fff;
+    transition: .2s;
+    box-shadow: 1px 0 10px -4px rgba(0, 0, 0, 0.8), -1px 0 10px -4px rgba(0, 0, 0, 0.8);
+}
+
+.header-socials {
+    display: none;
+}
+
+.header-socials img {
+    width: 30px;
+    height: auto;
+}
+
+.menuBtn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.menuBtn:hover {
+    cursor: pointer;
+}
+
+#openBtn {display: inline;}
+
+#closeBtn {display: none;}
+
+/* SIDE NAV */
+.side-nav.open {
+    width: 100%;
+}
+
+#openBtn.open {display: none;}
+#closeBtn.open {display: inline;}
+
+.side-nav {
+    height: auto;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 5rem;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+}
+
+.side-nav a.active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.side-nav a:hover {
+    color: #fff;
+    background-color: var(--primary);
+    transition: .2s;
+}
+
+/* HERO */
+.hero {
+    margin: 0 auto;
+    max-width: 75rem;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.hero img {
+    width: auto;
+    height: 400px;
+    display: block;
+}
+
+.call-to-action {
+    box-shadow: 0px 0px 5px #000;
+    cursor: pointer;
+    background-color: var(--primary);
+    width: 14rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1rem;
+    position: absolute;
+    left: calc(50% - 8rem);
+    bottom: -32px;
+}
+
+.call-to-action:hover {
+    color: var(--primary);
+    background-color: #fff;
+    transition: .2s;
+}
+
+.call-to-action:active {
+    transform: translate(1px, 1px);
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    max-width: 15rem;
+    top: 5rem;
+    left: calc(50% - 7.5rem);
+    color: var(--primary);
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff;
+}
+
+.hero-text p {
+    margin: 0;
+}
+
+/* MAIN */
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-top: 1px solid grey;
+}
+
+.footer-cont {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.footer-image img {
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+.footer-main h2 {
+    margin: 0;
+}
+
+.footer-main p {
+    margin: .5rem 0;
+}
+
+.footer-main {
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.course-info {
+    margin-top: 3rem;
+}
+
+.course-info > hr {
+    margin: 1.5rem 0 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.course-info span:nth-child(2) {
+    display: none;
+}
+
+/* ------------------------------------------------------------ */
+/* HOME MAIN */
+.home-main h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+.temple-description {
+    margin: 6rem 1rem 0 1rem;
+}
+
+.temple-description img {
+    width: 100%;
+    border: 1px solid grey;
+}
+
+/* WEATHER */
+.main-weather {
+    color: #fff;
+    background-color: var(--primary);
+    margin: 4rem 0 0 0;
+    padding: 1rem;
+    border: 1px solid grey;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#forecast > div {
+    width: 25%;
+    padding: .5rem;
+    /* box-shadow: 0px 0px 5px #000; */
+    border: 1px solid grey;
+    max-width: 6rem;
+}
+
+#forecast p {
+    margin: 0;
+}
+
+.main-about-us {
+    margin: 4rem 1rem 5rem 1rem;
+}
