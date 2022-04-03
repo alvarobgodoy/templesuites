@@ -142,11 +142,17 @@ body {
     height: auto;
     position: relative;
     z-index: 0;
+    display: block;
+}
+
+.hero-img {
+    overflow: hidden;
 }
 
 .hero img {
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: auto;
+    min-width: 30rem;
     display: block;
 }
 
