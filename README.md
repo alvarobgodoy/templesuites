@@ -1,2 +1,2 @@
-# templesuites
-Used to host the Temple Inn &amp; Suites website, final project for WDD 230 at BYU-Idaho.
+# Final Project: The Temple Inn & Suites
+Built and designed by Alvaro B. Godoy
