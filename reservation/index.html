@@ -1,1 +1,140 @@
-reservation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites reservation page.">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="nav-cont">
+                <div class="header-logo-cont">
+                    <a href="./index.html">
+                        <img src="../images/logo.png" alt="Temple Inn & Suites logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../temples/">Temples</a></li>
+                    <li><a href="./">Reservation</a></li>
+                    <li><a href="../services/">Services</a></li>
+                </ul>
+                <div class="header-socials">
+                    <a href="https://facebook.com" target="_blank"><img src="../images/facebook-logo.webp" alt="Facebook logo"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="../images/linkedin-logo.webp" alt="Linkedin logo"></a>
+                </div>
+                <button id="openBtn" class="menuBtn" onclick="toggleSlideMenu()">&#9776;</button>
+                <button id="closeBtn"  class="menuBtn" onclick="toggleSlideMenu()">&#10005;</button>
+            </div>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="../">Home</a>
+            <a href="../temples/">Temples</a>
+            <a href="./" class="active">Reservation</a>
+            <a href="../services/">Services</a>
+        </div>
+        <div class="hero">
+            <div class="hero-img">
+                <picture>
+                    <source media="(min-width: 40rem) and (max-width: 64rem)" srcset="../images/medium1.jpg">
+                    <source media="(min-width: 64rem)" srcset="../images/large1.jpg">
+                    <img src="../images/small1.jpg" alt="Hero Image">
+                </picture>
+            </div>
+            <div class="hero-text">
+                <h2>Book your perfect stay!</h2>              
+                <p>Fast, easy and low-cost</p>
+            </div>
+        </div>
+    </header>
+    <main class="reservation-main">
+        <form action="get" action="successfullysent.html" class="reservation-form">
+            <h1>Make a reservation</h1>
+            <hr>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name<span class="required-symbol">*</span> 
+                    <input type="text" name="fname" required></label>
+                <label class="top">Last Name<span class="required-symbol">*</span> 
+                    <input type="text" name="lname" required></label>
+                <label class="top">Email<span class="required-symbol">*</span> 
+                    <input type="email" name="email" placeholder="youremail@email.com" required></label>
+                <label class="top">Phone<span class="required-symbol">*</span> 
+                    <input type="tel" name="phone" required></label>
+                <label class="top">Home State<span class="required-symbol">*</span> 
+                    <input type="text" name="state" required></label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Your reservation</legend>
+                <label class="top">Location<span class="required-symbol">*</span>
+                    <select id="hotel-locations" required>
+                        <option value="" disabled selected>Select a facility</option>
+                        <option value="bethesda">Bethesda, MD</option>
+                        <option value="manhattan">Manhattan, NY</option>
+                        <option value="hartford">Hartford, CT</option>
+                        <option value="trenton">Trenton, NJ</option>
+                        <option value="saltlake">Salt Lake City, UT</option>
+                    </select></label>
+                <label class="top">Date<span class="required-symbol">*</span>
+                    <input type="date" required></label>
+                <label class="top">Room number<span class="required-symbol">*</span>
+                    <select id="hotel-rooms" required>
+                        <option value="" disabled selected>Select a room</option>
+                        <option value="1a">1A</option>
+                        <option value="1b">1B</option>
+                        <option value="1c" disabled>1C</option>
+                        <option value="2a">2A</option>
+                        <option value="2b" disabled>2B</option>
+                        <option value="2c" disabled>2C</option>
+                        <option value="3a">3A</option>
+                        <option value="3b">3B</option>
+                        <option value="3c" disabled>3C</option>
+                    </select></label>  
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Specialized Services</legend>
+                <label class="side"><input type="checkbox"> Babysitting service</label>
+                <label class="side"><input type="checkbox"> Kitchen access</label>
+                <label class="side"><input type="checkbox"> Transportation</label>
+                <label class="side"><input type="checkbox"> Temple clothes</label>  
+            </fieldset>
+            <hr>
+            <input type="submit" value="Reserve my room" id="reserveBtn">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-cont">
+            <a href="./index.html" class="footer-image"><img src="../images/logo-footer.png" alt="Website logo"></a>
+            <div class="footer-main">
+                <div>
+                    <h2>Location</h2>
+                    <p>4800 Montgomery Ln #300</p>
+                    <p>Bethesda, MD 20814</p>
+                    <a href="https://goo.gl/maps/j9MNBHJGaQ675KJZ8" target="_blank">📍 Google maps location</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h2>Contact Info</h2>
+                <p>info@templesuites.com</p>
+                <p>+1 (234) 5678-9012</p>
+            </div>
+        <div class="course-info">
+            <hr>
+            <p>© <span id="currentYear"></span> Temple Inn & Suites | Alvaro B. Godoy | WDD 230 Final Project<span> |</span></p>
+            <p id="lastUpdate"></p>
+        </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/temples.js"></script>
+</body>
+</html>

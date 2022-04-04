@@ -1,20 +1,3 @@
-// Menu
-function toggleSlideMenu() {
-    document.getElementById('side-menu').classList.toggle('open');
-    document.getElementById('openBtn').classList.toggle('open');
-    document.getElementById('closeBtn').classList.toggle('open');
-}
-
-// Footer
-let lastModified = document.lastModified;
-    
-document.getElementById('lastUpdate').textContent = (`Last modification: ${lastModified}`);
-let currentYear = document.querySelector('#currentYear');
-
-year = new Date().getFullYear();
-
-currentYear.textContent = year;
-
 // Capitalize function
 function capitalizeFirstLetter(string) {
 return string.charAt(0).toUpperCase() + string.slice(1);
@@ -41,7 +24,6 @@ fetch(requestURL)
     let day1 = jsObject.daily[0];
     let day2 = jsObject.daily[1];
     let day3 = jsObject.daily[2];
-    console.log(day1)
 
     forecastCard(day1, 'Day 1');
     forecastCard(day2, 'Day 2');

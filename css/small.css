@@ -152,8 +152,9 @@ body {
 .hero img {
     width: 100%;
     height: auto;
-    min-width: 30rem;
+    min-width: 35rem;
     display: block;
+    filter: brightness(50%);
 }
 
 .call-to-action {
@@ -166,6 +167,8 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
     padding: 1rem;
     position: absolute;
     left: calc(50% - 8rem);
@@ -183,18 +186,22 @@ body {
 }
 
 .hero-text {
-    font-size: 1.5rem;
     position: absolute;
     text-align: center;
     max-width: 15rem;
     top: 5rem;
     left: calc(50% - 7.5rem);
-    color: var(--primary);
-    font-weight: bold;
-    text-shadow: 0 0 10px #fff;
+    color: #fff;
+    /* text-shadow: 1px 1px 2px #000; */
+}
+
+.hero-text h2 {
+    /* font-weight: bold; */
+    font-size: 3rem;
 }
 
 .hero-text p {
+    /* font-weight: bold; */
     margin: 0;
 }
 
@@ -299,4 +306,61 @@ footer a {
 
 .main-about-us {
     margin: 4rem 1rem 5rem 1rem;
+}
+
+/* ------------------------------------------------------------ */
+/* RESERVATION PAGE */
+.reservation-form {
+    border: 1px solid grey;
+    /* color: #fff; */
+    padding: 1rem;
+    /* background-color: var(--primary); */
+}
+
+.required-symbol {color: red;}
+
+.reservation-form legend {
+    font-size: 1.4rem;
+}
+
+.reservation-form fieldset {
+    border: none;
+    padding-left: 0;
+}
+
+.reservation-form input, select {
+    cursor: pointer;
+}
+.top {
+    display: block;
+    margin-top: 1rem;
+}
+
+.top input, select {
+    display: block;
+    width: 100%;
+    height: 2rem;
+}
+
+.side {
+    display: block;
+    margin-top: 1rem;
+}
+
+label.side {
+    cursor: pointer;
+}
+
+.side input {
+    margin: .3rem;
+}
+
+#reserveBtn {
+    width: 100%;
+    border: none;
+    background-color: var(--primary);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
 }

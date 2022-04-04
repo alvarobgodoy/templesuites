@@ -29,10 +29,10 @@
 .hero-text {
     text-align: left;
     font-size: 1.7rem;
-    height: 5rem;
+    height: 4.5rem;
     left: 5rem;
-    max-width: 35rem;
-    top: calc(50% - 2.5rem);
+    max-width: 40rem;
+    top: calc(50% - 2.25rem);
 }
 
 .hero-text p {
@@ -87,5 +87,12 @@
 
 #forecast {
     margin-top: 1rem;
+}
+
+/* ------------------------------------------------------------ */
+/* RESERVATION PAGE */
+.reservation-form {
+    max-width: 44rem;
+    margin: 2rem auto;
 }
 }

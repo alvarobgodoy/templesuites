@@ -1,1 +1,73 @@
-temples
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites temples page.">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="nav-cont">
+                <div class="header-logo-cont">
+                    <a href="./index.html">
+                        <img src="../images/logo.png" alt="Temple Inn & Suites logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="./">Temples</a></li>
+                    <li><a href="../reservation/">Reservation</a></li>
+                    <li><a href="../services/">Services</a></li>
+                </ul>
+                <div class="header-socials">
+                    <a href="https://facebook.com" target="_blank"><img src="../images/facebook-logo.webp" alt="Facebook logo"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="../images/linkedin-logo.webp" alt="Linkedin logo"></a>
+                </div>
+                <button id="openBtn" class="menuBtn" onclick="toggleSlideMenu()">&#9776;</button>
+                <button id="closeBtn"  class="menuBtn" onclick="toggleSlideMenu()">&#10005;</button>
+            </div>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="../">Home</a>
+            <a href="./" class="active">Temples</a>
+            <a href="../reservation/">Reservation</a>
+            <a href="../services/">Services</a>
+        </div>
+    </header>
+    <main class="temples-main">
+        <h1>Temples</h2>
+    </main>
+    <footer>
+        <div class="footer-cont">
+            <a href="./index.html" class="footer-image"><img src="../images/logo-footer.png" alt="Website logo"></a>
+            <div class="footer-main">
+                <div>
+                    <h2>Location</h2>
+                    <p>4800 Montgomery Ln #300</p>
+                    <p>Bethesda, MD 20814</p>
+                    <a href="https://goo.gl/maps/j9MNBHJGaQ675KJZ8" target="_blank">📍 Google maps location</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h2>Contact Info</h2>
+                <p>info@templesuites.com</p>
+                <p>+1 (234) 5678-9012</p>
+            </div>
+        <div class="course-info">
+            <hr>
+            <p>© <span id="currentYear"></span> Temple Inn & Suites | Alvaro B. Godoy | WDD 230 Final Project<span> |</span></p>
+            <p id="lastUpdate"></p>
+        </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/temples.js"></script>
+</body>
+</html>

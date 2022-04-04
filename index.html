@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites home page.">
     <title>Temple Inn & Suites</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/small.css">
@@ -12,42 +13,34 @@
 </head>
 <body>
     <header>
-        <!-- Nav -->
         <nav class="header-nav">
             <div class="nav-cont">
-                <!-- Logo -->
                 <div class="header-logo-cont">
                     <a href="./index.html">
                         <img src="./images/logo.png" alt="Temple Inn & Suites logo">
                     </a>
                 </div>
-                <!-- Nav links -->
                 <ul>
                     <li><a href="./">Home</a></li>
                     <li><a href="./temples/">Temples</a></li>
                     <li><a href="./reservation/">Reservation</a></li>
                     <li><a href="./services/">Services</a></li>
                 </ul>
-                <!-- Socials -->
                 <div class="header-socials">
                     <a href="https://facebook.com" target="_blank"><img src="./images/facebook-logo.webp" alt="Facebook logo"></a>
                     <a href="https://linkedin.com" target="_blank"><img src="./images/linkedin-logo.webp" alt="Linkedin logo"></a>
                 </div>
-                <!-- Open Button -->
                 <button id="openBtn" class="menuBtn" onclick="toggleSlideMenu()">&#9776;</button>
                 <button id="closeBtn"  class="menuBtn" onclick="toggleSlideMenu()">&#10005;</button>
             </div>
         </nav>
-        <!-- Side Menu -->
         <div id="side-menu" class="side-nav">
             <a href="./" class="active">Home</a>
             <a href="./temples/">Temples</a>
             <a href="./reservation/">Reservation</a>
             <a href="./services/">Services</a>
         </div>
-        <!-- Hero -->
         <div class="hero">
-            <!-- Hero image -->
             <div class="hero-img">
                 <picture>
                     <source media="(min-width: 40rem) and (max-width: 64rem)" srcset="./images/medium.jpg">
@@ -55,15 +48,11 @@
                     <img src="./images/small.jpg" alt="Hero Image">
                 </picture>
             </div>
-            <!-- Hero text -->
             <div class="hero-text">
-                <h2>We take care of everything</h2>              
-                <p>You just have to enjoy your stay</p>
+                <h2>Travel without worries</h2>              
+                <p>We take care of everything</p>
             </div>
-            <!-- Call to action -->
-            <div class="call-to-action">
-                <h2>Reserve now!</h2>
-            </div>
+            <a href="./reservation/" class="call-to-action">Reserve now!</a>
         </div>
     </header>
     <main class="home-main">
@@ -114,6 +103,8 @@
             <p id="lastUpdate"></p>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/footer.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
