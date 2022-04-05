@@ -1,0 +1,80 @@
+{
+    "temples": [
+        {
+        "name": "Boston Massachusetts Temple",
+        "address": "100 Hinckley Wy, Belmont MA 02478-2135",
+        "phone": "(1) 617-993-9993",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"],
+        "closeSchedule": ["Monday, 7 March 2022 - Monday, 16 May 2022"],
+        "dedicated": "1 October 2000",
+        "image": "boston.jpeg",
+        "url": "https://www.churchofjesuschrist.org/temples/details/boston-massachusetts-temple?lang=eng"
+        },
+        {
+        "name": "Manhattan New York Temple",
+        "address": "125 Columbus Ave, Fourth Floor, New York NY 10023-6514",
+        "phone": "(1) 917-441-8220",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+           " Distribution center nearby"
+        ],
+        "closeSchedule": [
+            "Monday, 4 July 2022",
+            "Monday, 25 July 2022 - Monday, 8 August 2022",
+            "Saturday, 1 October 2022 - Sunday, 2 October 2022",
+            "Thursday, 24 November 2022 - Friday, 25 November 2022",
+            "Saturday, 24 December 2022"
+        ],
+        "dedicated": "13 June 2004",
+        "image": "manhattan.jpg",
+        "url": "https://www.churchofjesuschrist.org/temples/details/manhattan-new-york-temple?lang=eng"
+        },
+        {
+        "name": "Hartford Connecticut Temple",
+        "address": "2 Central Wy, Farmington CT 06032",
+        "phone": "(1) 860-773-7200",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "closeSchedule": [
+            "Monday, 5 September 2022 - Monday, 28 November 2022",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"
+        ],
+        "dedicated": "20 November 2016",
+        "image": "hartford.jpeg",
+        "url": "https://www.churchofjesuschrist.org/temples/details/hartford-connecticut-temple?lang=eng"
+        },
+        {
+        "name": "Palmyra New York Temple",
+        "address": "2720 Temple Rd, Palmyra NY 14522-9573",
+        "phone": "(1) 315-597-6001",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "closeSchedule": [
+            "Monday, 4 July 2022",
+            "Monday, 12 September 2022 - Monday, 26 September 2022",
+            "Saturday, 1 October 2022",
+            "Thursday, 24 November 2022",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"
+        ],
+        "dedicated": "6 April 2000",
+        "image": "palmyra.jpg",
+        "url": "https://www.churchofjesuschrist.org/temples/details/palmyra-new-york-temple?lang=eng"
+        }
+    ]
+}

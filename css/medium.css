@@ -95,4 +95,23 @@
     max-width: 44rem;
     margin: 2rem auto;
 }
+
+/* ------------------------------------------------------------ */
+/* TEMPLES PAGE */
+.statistics {
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.statistics > p {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    margin: 0;
+}
+
+/* TEMPLES GRID */
+.temples-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
 }

@@ -312,9 +312,7 @@ footer a {
 /* RESERVATION PAGE */
 .reservation-form {
     border: 1px solid grey;
-    /* color: #fff; */
     padding: 1rem;
-    /* background-color: var(--primary); */
 }
 
 .required-symbol {color: red;}
@@ -363,4 +361,71 @@ label.side {
     font-size: 1.5rem;
     color: #fff;
     font-family: 'Roboto Slab', serif;
+}
+
+/* ------------------------------------------------------------ */
+/* TEMPLES PAGE */
+.temples-main {
+    max-width: 65rem;
+    margin-top: 2rem;
+}
+
+.temples-main h1 {
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    border-bottom: 1px solid grey;
+    font-size: 3rem;
+}
+
+.statistics {
+    border: 1px solid grey;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.statistics h2 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.statistics > div p {
+    margin: 0;
+}
+
+.temple-num {
+    font-size: 3rem;
+}
+
+.statistics > p {
+    grid-column: span 2;
+}
+
+/* TEMPLES GRID */
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.temples-grid > div {
+    padding: 1rem;
+    background-color: var(--primary);
+    color: #fff;
+    border: 1px solid grey;
+}
+
+.temples-grid > div h2 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.temples-grid > div img {
+    width: 100%;
+    border: 1px solid grey;
 }

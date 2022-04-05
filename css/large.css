@@ -105,4 +105,20 @@
 .main-about-us {
     margin: 4rem 0 0 0;
 }
+
+/* ------------------------------------------------------------ */
+/* TEMPLES PAGE */
+.temples-main {
+    margin-top: 4rem;
+}
+
+.statistics {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.statistics > p {
+    grid-column: span 4;
+    grid-row: 2;
+}
 }
