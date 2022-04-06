@@ -363,6 +363,34 @@ label.side {
     font-family: 'Roboto Slab', serif;
 }
 
+.form-sent {
+    /* background-color: var(--primary); */
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem;
+    /* color: #fff; */
+    max-width: 100%;
+}
+
+.form-sent h1 {
+    margin-bottom: 4rem;
+}
+
+.form-sent a {
+    color: #fff;
+    background-color: var(--primary);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.form-sent a:hover {
+    color: var(--primary);
+    background-color: #fff;
+    border: 1px solid grey;
+    transition: .5s;
+}
+
 /* ------------------------------------------------------------ */
 /* TEMPLES PAGE */
 .temples-main {
