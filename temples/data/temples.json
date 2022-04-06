@@ -11,7 +11,7 @@
             "Distribution center nearby"],
         "closeSchedule": ["Monday, 7 March 2022 - Monday, 16 May 2022"],
         "dedicated": "1 October 2000",
-        "image": "boston.jpeg",
+        "image": "boston.webp",
         "url": "https://www.churchofjesuschrist.org/temples/details/boston-massachusetts-temple?lang=eng"
         },
         {
@@ -32,7 +32,7 @@
             "Saturday, 24 December 2022"
         ],
         "dedicated": "13 June 2004",
-        "image": "manhattan.jpg",
+        "image": "manhattan.webp",
         "url": "https://www.churchofjesuschrist.org/temples/details/manhattan-new-york-temple?lang=eng"
         },
         {
@@ -51,7 +51,7 @@
             "Saturday, 31 December 2022"
         ],
         "dedicated": "20 November 2016",
-        "image": "hartford.jpeg",
+        "image": "hartford.webp",
         "url": "https://www.churchofjesuschrist.org/temples/details/hartford-connecticut-temple?lang=eng"
         },
         {
@@ -73,7 +73,7 @@
             "Saturday, 31 December 2022"
         ],
         "dedicated": "6 April 2000",
-        "image": "palmyra.jpg",
+        "image": "palmyra.webp",
         "url": "https://www.churchofjesuschrist.org/temples/details/palmyra-new-york-temple?lang=eng"
         }
     ]
