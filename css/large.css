@@ -28,6 +28,28 @@
     margin: 0 3rem;
 }
 
+.dropmenu {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 15rem;
+    z-index: 1;
+}
+
+li.dropmenu > div > a {
+    padding: 1rem;
+    background-color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.dropmenu:hover .dropdown {
+    display: block;
+}
+
 /* SIDE NAV */
 .side-nav {
     display: none;

@@ -123,6 +123,11 @@ body {
     color: #000;
     display: block;
     text-align: center;
+    border-top: 1px solid grey;
+}
+
+.side-nav > a:nth-child(5), .side-nav > a:nth-child(6) {
+    border: none;
 }
 
 .side-nav a.active {
