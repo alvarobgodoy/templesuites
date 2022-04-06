@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites services page.">
+    <title>Missionary</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/small.css">
+    <link rel="stylesheet" href="../../css/medium.css">
+    <link rel="stylesheet" href="../../css/large.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="nav-cont">
+                <div class="header-logo-cont">
+                    <a href="../../index.html">
+                        <img src="../../images/logo.png" alt="Temple Inn & Suites logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="../../">Home</a></li>
+                    <li><a href="../../temples/">Temples</a></li>
+                    <li><a href="../../reservation/">Reservation</a></li>
+                    <li class="dropmenu">
+                        <a href="../../services/">Services&#9662;</a>
+                        <div class="dropdown">
+                            <a href="../../services/reception/">Reception</a>
+                            <a href="../../services/temple-missionary/">Temple Missionaries</a>
+                        </div> 
+                    </li>
+                </ul>
+                <div class="header-socials">
+                    <a href="https://facebook.com" target="_blank"><img src="../../images/facebook-logo.webp" alt="Facebook logo"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="../../images/linkedin-logo.webp" alt="Linkedin logo"></a>
+                </div>
+                <button id="openBtn" class="menuBtn" onclick="toggleSlideMenu()">&#9776;</button>
+                <button id="closeBtn"  class="menuBtn" onclick="toggleSlideMenu()">&#10005;</button>
+            </div>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="../../">Home</a>
+            <a href="../../temples/">Temples</a>
+            <a href="../../reservation/">Reservation</a>
+            <a class="side-dropmenu" href="../../services/">Services&#9662;</a>
+            <a href="../../services/reception/">Reception</a>
+            <a class="active" href="../../services/temple-missionary/">Temple Missionaries</a>
+        </div>
+        <div class="hero">
+            <div class="hero-img">
+                <picture>
+                    <source media="(min-width: 40rem) and (max-width: 64rem)" srcset="../../images/medium4.jpg">
+                    <source media="(min-width: 64rem)" srcset="../../images/large4.jpg">
+                    <img src="../../images/small4.jpg" alt="Hero Image">
+                </picture>
+            </div>
+            <div class="hero-text">
+                <h2>Your experience matter</h2>              
+                <p>We promise the best service</p>
+            </div>
+            <a href="../../reservation/" class="call-to-action">Reserve now!</a>
+        </div>
+    </header>
+    <main class="missionaries-main">
+        <div class="missionaries">
+            <h1>Church-Service Missionary</h1>
+            <p>The Church-service mission program includes some full-time opportunities that usually range from six months to two years of service, depending on the current needs and availability.<br><br>Tens of thousands of Church-service missionaries are needed every year to answer the call and devote the time they have to serving. Specific calls may vary, but all Church-service missions work to provide relief, comfort, and support to people around the world.</p>
+        </div>
+        <img src="../../images/missionary.jpg" alt="Temple Inn & Suites services">
+        <h1 class="suite-gallery-title">Our Suites</h1>
+        <div class="suite-gallery">
+            <img src="../../images/suite1.jpg" alt="Our Suites">
+            <img src="../../images/suite2.jpg" alt="Our Suites">
+            <img src="../../images/suite3.jpg" alt="Our Suites">
+            <img src="../../images/suite4.jpg" alt="Our Suites">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-cont">
+            <a href="../../index.html" class="footer-image"><img src="../../images/logo-footer.png" alt="Website logo"></a>
+            <div class="footer-main">
+                <div>
+                    <h2>Location</h2>
+                    <p>4800 Montgomery Ln #300</p>
+                    <p>Bethesda, MD 20814</p>
+                    <a href="https://goo.gl/maps/j9MNBHJGaQ675KJZ8" target="_blank">📍 Google maps location</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h2>Contact Info</h2>
+                <p>info@templesuites.com</p>
+                <p>+1 (234) 5678-9012</p>
+            </div>
+        <div class="course-info">
+            <hr>
+            <p>© <span id="currentYear"></span> Temple Inn & Suites | Alvaro B. Godoy | WDD 230 Final Project<span> |</span></p>
+            <p id="lastUpdate"></p>
+        </div>
+    </footer>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/footer.js"></script>
+</body>
+</html>

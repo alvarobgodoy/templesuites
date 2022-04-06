@@ -462,3 +462,75 @@ label.side {
     width: 100%;
     border: 1px solid grey;
 }
+
+/* ------------------------------------------------------------ */
+/* SERVICES PAGE */
+.services-main {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.services-main h1 {
+    border-bottom: 1px solid grey;
+    margin-top: 3rem;
+}
+
+.services-main img {
+    width: 100%;
+}
+
+.services-main ul {
+    padding-left: 1rem;
+}
+
+.services-main ul li {
+    list-style-type: none;
+}
+
+/* ------------------------------------------------------------ */
+/* RECEPTION PAGE */
+.reception-main {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.reception-main h1 {
+    border-bottom: 1px solid grey;
+    margin-top: 3rem;
+}
+
+.reception-main img {
+    width: 100%;
+}
+
+.reception-main ul {
+    padding-left: 1rem;
+}
+
+.reception-main ul li {
+    list-style-type: none;
+}
+
+/* ------------------------------------------------------------ */
+/* MISSIONARY */
+.missionaries-main {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.missionaries-main h1 {
+    border-bottom: 1px solid grey;
+    margin-top: 3rem;
+}
+
+.missionaries-main img {
+    width: 100%;
+}
+
+.missionaries-main ul {
+    padding-left: 1rem;
+}
+
+.missionaries-main ul li {
+    list-style-type: none;
+}

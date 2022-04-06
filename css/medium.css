@@ -114,4 +114,36 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
+/* ------------------------------------------------------------ */
+/* SERVICES PAGE */
+.services-main img {
+    max-width: 40rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ */
+/* RECEPTION PAGE */
+.reception-main img {
+    max-width: 40rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ */
+/* MISSIONARY */
+.missionaries-main img {
+    max-width: 40rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.suite-gallery {
+    margin-top: 1rem;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
 }
